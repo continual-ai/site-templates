@@ -7,6 +7,7 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
+    "./telemetry": "./src/telemetry/index.ts",
     "./scripts/call": "./scripts/call.ts"
   },
   "files": [

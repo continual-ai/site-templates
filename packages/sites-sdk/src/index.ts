@@ -43,6 +43,14 @@ export {
 } from "./parse";
 export { callPreviewTool, getPreviewRuntimeConfig } from "./preview";
 export { callPublishedTool } from "./published";
+export { initTelemetry, getTelemetry } from "./telemetry";
+export type {
+  Breadcrumb,
+  BreadcrumbCategory,
+  BreadcrumbLevel,
+  InitTelemetryOptions,
+  TelemetryHandle,
+} from "./telemetry";
 export { ContinualRuntimeError } from "./errors";
 export type { ContinualRuntimeErrorCode } from "./errors";
 export type {
