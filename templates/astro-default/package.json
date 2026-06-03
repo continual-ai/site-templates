@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",
-    "@continual/sites-sdk": "^0.1.0",
+    "@continual/sites-sdk": "^0.2.0",
     "@astrojs/react": "^5.0.4",
     "@astrojs/sitemap": "^3.7.2",
     "@fontsource-variable/geist": "^5.2.8",
