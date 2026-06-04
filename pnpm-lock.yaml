@@ -20,8 +20,8 @@ importers:
         specifier: ^3.7.2
         version: 3.7.2
       '@continual/sites-sdk':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.2.0
+        version: 0.2.0
       '@fontsource-variable/geist':
         specifier: ^5.2.8
         version: 5.2.9
@@ -292,9 +292,9 @@ packages:
     resolution: {integrity: sha512-S0My7XPGIgpRWMDG8uRqalbgT+a6FmCUdOW+HaIOVVpUPHOb7RrpvjTjiODadKp06fsrVDJZlIzc6yCTp4AnxA==}
     engines: {node: '>= 20.12.0'}
 
-  '@continual/sites-sdk@0.1.0':
-    resolution: {integrity: sha512-fEy5s3Z36/bLgORY7wIZJmPfDvc4L2fqG04mqbfbXfALLekfdddeCHGWyxdwycEIUAmHuQv3BFyFIGD62f+LCw==}
-    engines: {node: '>=22.12.0'}
+  '@continual/sites-sdk@0.2.0':
+    resolution: {integrity: sha512-luRmzhxPIJWtFHLUo4MJbKbKXrSCzr4Gq7j3T9miGO3uSOVCjIHMXqSJN0rX+Puk0xqFa1dVmyPOs11CP41+GA==}
+    engines: {node: '>=24.0.0'}
 
   '@dotenvx/dotenvx@1.66.0':
     resolution: {integrity: sha512-qlQFhHUjhRDybrinqLAD0MClVZDOrsq80O8eD5iSjz3Qa/4f3Jg7SQrOaSobrRyP1QaWIYLGtGpj2c7H0D8NUw==}
@@ -4693,7 +4693,7 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@continual/sites-sdk@0.1.0': {}
+  '@continual/sites-sdk@0.2.0': {}
 
   '@dotenvx/dotenvx@1.66.0':
     dependencies:
