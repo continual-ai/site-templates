@@ -1,2 +1,11 @@
 packages:
   - "templates/*"
+
+# Allow these dependencies to run their install scripts. pnpm 11 blocks all
+# install scripts by default unless explicitly allowlisted. The previous
+# config lived under `pnpm.onlyBuiltDependencies` in the root package.json,
+# which pnpm 11 silently ignores (see ERR_PNPM_IGNORED_BUILDS warning).
+allowBuilds:
+  esbuild: true
+  msw: true
+  sharp: true
