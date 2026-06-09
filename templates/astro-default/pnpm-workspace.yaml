@@ -1,0 +1,19 @@
+# Allow dependency install scripts to run in scaffolded sites.
+#
+# pnpm 11 blocks all install scripts by default. Without this, `pnpm install`
+# fails with ERR_PNPM_IGNORED_BUILDS for esbuild / sharp / msw / etc., which
+# breaks every agent-side `pnpm install` and `pnpm exec` in a freshly
+# scaffolded site (`pnpm exec` does a deps-status-check that runs install
+# internally).
+#
+# The setting name and casing matters: `dangerouslyAllowAllBuilds: true` is
+# the pnpm 11.x key (camelCase, only honored from pnpm-workspace.yaml — not
+# .npmrc, not env vars). The kebab-case `dangerously-allow-all-builds` is
+# silently ignored.
+#
+# Rationale for "allow all" instead of an `allowBuilds` allowlist: scaffolded
+# sites run inside a managed Daytona sandbox under Continual's agent, with
+# all deps coming from the npm registry. Maintaining a per-template allowlist
+# would silently break sites whenever new dependencies that need build
+# scripts get added.
+dangerouslyAllowAllBuilds: true
